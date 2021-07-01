@@ -1,4 +1,4 @@
-public class Querry <V>{
+public class Queue<V>{
 
     private Element head;
 
@@ -37,16 +37,15 @@ public class Querry <V>{
         else
             {
 
-                throw new IllegalStateException("Querry is already empty!");
+                throw new IllegalStateException("Queue is already empty!");
             }
     }
 
     public V remove(){
 
-
         Element temp = head;
         if(head==null) {
-            throw new IllegalStateException("Querry is already empty!");
+            throw new IllegalStateException("Queue is already empty!");
         }
         head = head.next;
 
